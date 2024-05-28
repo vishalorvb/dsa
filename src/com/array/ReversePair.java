@@ -6,7 +6,6 @@ public class ReversePair {
 		int count =0;
 		  public int reversePairs(int[] nums) {
 			  Mergesort(nums,0,nums.length-1);
-			  System.out.println("total="+count);
 			  return count;
 		    }
 		
@@ -25,8 +24,6 @@ public class ReversePair {
 		}
 		
 	   public  int[] mergerSortedArray(int arr1[], int arr2[]) {
-		   System.out.println(Arrays.toString(arr1));
-		   System.out.println(Arrays.toString(arr2));
 		   int l = 0 ;
 		   int r = 0 ;
 		   int count1 =0;
@@ -47,8 +44,6 @@ public class ReversePair {
 			   l++;
 		   }
 		   count = count + count1;
-		   System.out.println(count1);
-		   System.out.println("================");
 		   int temp[] = new int[arr1.length + arr2.length];
 			int i = 0;
 			int j = 0;
