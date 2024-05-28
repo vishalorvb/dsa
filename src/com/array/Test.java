@@ -8,11 +8,11 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-		Inversion i = new Inversion();
-		long[] arr = new long[] {3l,2l,1l};
-		
-		long l = i.getInversions(arr, arr.length);
-		
-		System.out.println(l);
+	ReversePair r = new ReversePair();
+	
+	int[] arr  = new int[] {2147483647,2147483647,2147483647,2147483647,2147483647,2147483647};
+	
+	r.reversePairs(arr);
+	System.out.println((long)2147483647>(long)2147483647*2);
 }
 }
