@@ -60,8 +60,6 @@ public class Sort {
 		int[] sh  = Mergesort(arr, mid+1, high);
 		
 		return mergerSortedArray(fh, sh);
-		
-
 	}
 
 }
