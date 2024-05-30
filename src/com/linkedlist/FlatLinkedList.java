@@ -30,6 +30,7 @@ public class FlatLinkedList {
 			if (head == null) {
 				head = i;
 				tail = i;
+				i = i.bottom;
 			} else {
 				tail.bottom = i;
 				tail = i;
@@ -41,6 +42,7 @@ public class FlatLinkedList {
 			if (head == null) {
 				head = j;
 				tail = j;
+				j = j.bottom;
 			} else {
 				tail.bottom = j;
 				tail = j;
