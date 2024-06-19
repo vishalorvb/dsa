@@ -10,7 +10,7 @@ public class Subsequence {
 		if(indx == arr.length) {
 			System.out.println(chotaList);
 			return;
-		}
+		} 
 		printSubsequence(new ArrayList<>(chotaList),arr,indx+1);
 		chotaList.add(arr[indx]);
 		printSubsequence(new ArrayList<>(chotaList),arr,indx+1);

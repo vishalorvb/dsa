@@ -17,11 +17,11 @@ public class MaximumSumIncreasing {
 			}
 			dpArray[i] = temp+arr[i];
 		}
-		for(int k=0; k<dpArray.length;k++) {
+		for(int k=0; k<dpArray.length;k++) { 
 			if(dpArray[k] > max) {
 				max = dpArray[k];
 			}
-		}
+		} 
 		return max;
 	}
 
