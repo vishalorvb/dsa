@@ -3,9 +3,16 @@ package com.graph;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Queue;
 
 public class BFS {
+	
+	public ArrayList<Integer> getPath(Map<Integer,List<Integer>> graph,ArrayList<Integer> result){
+		
+		
+		return result;
+	}
 
 	public ArrayList<Integer> bfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
 		ArrayList<Integer> result = new ArrayList<Integer>();
@@ -15,10 +22,11 @@ public class BFS {
 		while (!q.isEmpty()) {
 			int top = q.poll();
 			result.add(top);
-			visited[top] = true;
+			
 			List<Integer> temp = adj.get(top);
 			for (int i = 0; i < temp.size(); i++) {
 				if (visited[temp.get(i)] == false) {
+					visited[temp.get(i)] = true;
 					q.add(temp.get(i));
 				}
 			}
