@@ -22,7 +22,7 @@ public class BFS {
 		while (!q.isEmpty()) {
 			int top = q.poll();
 			result.add(top);
-			
+			visited[0] =true;
 			List<Integer> temp = adj.get(top);
 			for (int i = 0; i < temp.size(); i++) {
 				if (visited[temp.get(i)] == false) {
